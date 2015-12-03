@@ -1,4 +1,4 @@
-// Team 
+// Team Cash Cow - James Cao, Richard Wang
 // APCS1 pd9
 // HW41 -- In America, the Driver Sits on the Left 
 // 2015-12-01
@@ -101,8 +101,8 @@ public class Rational implements Comparable{
 	 }
      }
 
-     public int compareTo (Rational other){
-	 return (this.numerator*other.denominator - other.numerator*this.denominator);
+    public int compareTo (Object o){
+	return (this.numerator*(((Rational)o).denominator) - (((Rational)o).numerator)*this.denominator);
     }
 
     /*=====================PHASE 4=====================*/
