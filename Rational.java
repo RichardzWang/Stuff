@@ -1,7 +1,7 @@
 // Team Cash Cow - James Cao, Richard Wang
 // APCS1 pd9
 // HW41 -- In America, the Driver Sits on the Left 
-// 2015-12-01
+// 2015-12-03
 
 public class Rational implements Comparable{
     public int numerator;
