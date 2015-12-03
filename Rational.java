@@ -118,8 +118,11 @@ public class Rational implements Comparable{
         Rational r = new Rational(1, 1);
         Rational s = new Rational(7, 20);
 	Rational t = new Rational(14, 40);
-        System.out.println(s.compareTo(r));
-	System.out.println(s.equals(r));
-	System.out.println(s.equals(t));
+	System.out.println ("Fraction 1:\t" + r);
+	System.out.println ("Fraction 2:\t"+ s);
+	System.out.println ("Fraction 3:\t" +t);
+        System.out.println("Comparing Fraction 2 to Fraction 1:\t" + s.compareTo(r)); //should return -13
+	System.out.println("Checking to see if Fraction 2 is equal to Fraction 1\t" + s.equals(r)); // should return false
+	System.out.println("Checking to see if Fraction 2 is equal to Fraction 3\t" + s.equals(t)); //should return true
     }
 }
