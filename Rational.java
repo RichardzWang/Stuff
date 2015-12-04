@@ -102,8 +102,18 @@ public class Rational implements Comparable{
      }
 
     public int compareTo (Object o){
-	return (this.numerator*(((Rational)o).denominator) - (((Rational)o).numerator)*this.denominator);
-    }
+	int diff = (this.numerator*(((Rational)o).denominator) - (((Rational)o).numerator)*this.denominator);
+	if (diff > 0){
+            return 1;
+        }
+	else if (diff == 0){
+            return 0;
+        }
+        else{
+	    return -1;
+	}
+}
+
 
     /*=====================PHASE 4=====================*/
     public boolean equals(Object other){
